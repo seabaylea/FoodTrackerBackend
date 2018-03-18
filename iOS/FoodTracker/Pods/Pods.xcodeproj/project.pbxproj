@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032E79911FD45EBF6E784A31B458970F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		034FEEAEE68304446BC46DA712995B69 /* JSONWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B5125B0A87966708603E19C6810131 /* JSONWrapper.swift */; };
+		049375EF79F041F39A3DD7407006FFA8 /* CircuitBreaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F26FD1E642438783742A15C06BA11 /* CircuitBreaker.swift */; };
+		07BDA9F90AAFC0190A442889233F22F7 /* RequestErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52EDBB35DBD12B64AA901D2C7783F1C /* RequestErrorExtension.swift */; };
+		0DB09E448A20AA8E74E37DAE8F1F32A5 /* Invocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186409A6264796C7467704A6F3EAACD2 /* Invocation.swift */; };
+		10386C4EDB5AC4A651949986009921B2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8989639589EFFD4B351F2CB4B3851A33 /* Logger.swift */; };
+		11256289203E6F472C33B6E06E0AC80D /* QueryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2096DC559E5F72E33BCF70D51F4E30 /* QueryDecoder.swift */; };
+		1482F1943A5222450AB0E2495E75FAAE /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102C2F7513983FE9B52CE6052F0EA6F0 /* RestRequest.swift */; };
+		1A52EC4DC63914937CC073AB76435E20 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1492FA926313FC811ADD6B4B8EB8CF /* Utils.swift */; };
+		1C365D808E4288AEFDCE0A9591053B3E /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12975D2E009EB3EB30C7B0F5EB44167A /* JSON.swift */; };
+		1FBBB093FF8E1E93F94CECCCFF23C491 /* Contracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18963149D0E4C177109A3FF1CB1331D9 /* Contracts.swift */; };
+		204B66A1C6A0388FAA9FD65970EAE977 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		385BAD2570FDBA83856EA2B33D9F4741 /* RestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB851E05CAF57DCE0DF969E530709860 /* RestToken.swift */; };
+		3DC5695B34F5BA66665FB49F08CD5CD3 /* BreakerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3011FB03AA2F3A9898E297B917A3716 /* BreakerError.swift */; };
+		3FE595349CC50F66F97F8036CF19E40D /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A2EB231902A831CA52EC0682BBAF78 /* Monitor.swift */; };
+		42881CD3BD8D722B485FF765AC5EEF77 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486F6935033EFFCAC61D9C8285C7E73 /* CodableExtensions.swift */; };
+		432F4494E822FFACC07067C596A176FC /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F28390A1CC362F4623BC02AF06212 /* Stats.swift */; };
+		47032D3523F79EC0A7445A87DE1E1AC4 /* Pods-FoodTrackerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47781FDC6F7B50088432340BDFBA5318 /* Pods-FoodTrackerTests-dummy.m */; };
+		4980EF716E962D03310DF61296CE26D4 /* Bulkhead.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4488C2F41360D87AF18D61C296EE090 /* Bulkhead.swift */; };
+		49A82021DB79CC77977142FD1C81A879 /* Pods-FoodTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6225B8E76CA8421577794F9ADA9C153 /* Pods-FoodTracker-dummy.m */; };
+		50422E405FD2652990D61AE44FB509F3 /* QueryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB4E07A06C30106293D85848A641157 /* QueryEncoder.swift */; };
+		5369C4ADE2661AF4BDF43FCFA762A1FC /* ClousureAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C8CAB93E661E49528D6A26BA9AA2A9 /* ClousureAliases.swift */; };
+		5472DE241F0E97B779FC81FC9F32257F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EDEAEAFCDBD00CB3207117D5FC169 /* StringExtensions.swift */; };
+		6199EABBBFD2F69B37D08018A5B543A0 /* KituraKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5A73FA30AF2F6503503E3A59FC1BBE /* KituraKit-dummy.m */; };
+		705773F638C52F1089227E08279665B3 /* KituraKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB09B62500074F286A0A53D66EE05E5 /* KituraKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74E99E837DD1A41AA9260051E08270EE /* Pods-FoodTrackerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEEB09F336E59FED0165C2DB1ECD00FB /* Pods-FoodTrackerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78B68806BF2DB17B3CE6ECB7AEB0F6B4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F5E4F3E9F66A43B2EF67CA7F1D7000 /* Extensions.swift */; };
+		822A5DFFBD1BD2BEBDA295A47D04EF6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8D30437256CBDC8988EF33366CB2CE75 /* Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78F4D1455C2688B27A2F8EC8B19583 /* Coder.swift */; };
+		951B05142FD74D68D3D2054F60B5DBD1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C537AE474520341DDC49C66FBD0EF794 /* Client.swift */; };
+		9F7136A2AF75F042B168250DA3D19699 /* PersistableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA48BAEF55DC11F664B9DCB292415E29 /* PersistableExtension.swift */; };
+		A53A4BD7C809C31E848C8050898A1755 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432DFC1147122547CA1E5F4A2B8F3FF /* Collection.swift */; };
+		B100AD472BCF90BAC2BD05BE40041B15 /* Pods-FoodTracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29395FF02322061FFF5C035ACDD0E24F /* Pods-FoodTracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B35C15BA841E0803EEAC64E3070104EC /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD840B2A569699690AAA2FDFF5E5972 /* Snapshot.swift */; };
+		CDB8BB01077D019D46E134A25B762B0F /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F532C0B96AB6FDB07E359CB69067E28 /* MultipartFormData.swift */; };
+		E8A6C4E5D604B9770954B7C8963D47C9 /* RestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB931C8D525909ED7DAA8DF87223515E /* RestUtilities.swift */; };
+		F0D5607A1F8816F2DC9F1C7BEC8F56BF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EC6CD3F9B1E8FC28C017DFE9F45900 /* HTTPMethod.swift */; };
+		FFCC8D23103FC03BB4F2E3D35C662D88 /* MonitorCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390DB8E27A6BEA4887D7710560DEC4C2 /* MonitorCollection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E6592E24893D37E72138449C09B5E18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5422A23D0CDFFC0AA49ABC989A82CBEF;
+			remoteInfo = KituraKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01959C2F3F0266A1CD5B61AFD7146E76 /* Pods-FoodTracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoodTracker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0C22C3C8E8A3236E19648A4AFB699722 /* Pods_FoodTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoodTracker.framework; path = "Pods-FoodTracker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D0EDEAEAFCDBD00CB3207117D5FC169 /* StringExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = Sources/KituraKit/SwiftyRequest/StringExtensions.swift; sourceTree = "<group>"; };
+		102C2F7513983FE9B52CE6052F0EA6F0 /* RestRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestRequest.swift; path = Sources/KituraKit/SwiftyRequest/RestRequest.swift; sourceTree = "<group>"; };
+		12975D2E009EB3EB30C7B0F5EB44167A /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/KituraKit/SwiftyRequest/JSON.swift; sourceTree = "<group>"; };
+		1432DFC1147122547CA1E5F4A2B8F3FF /* Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collection.swift; path = Sources/KituraKit/CircuitBreaker/Collection.swift; sourceTree = "<group>"; };
+		186409A6264796C7467704A6F3EAACD2 /* Invocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Invocation.swift; path = Sources/KituraKit/CircuitBreaker/Invocation.swift; sourceTree = "<group>"; };
+		18963149D0E4C177109A3FF1CB1331D9 /* Contracts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contracts.swift; path = Sources/KituraKit/KituraContracts/Contracts.swift; sourceTree = "<group>"; };
+		19C96E2478C9DF49E591E5017A199C1A /* Pods-FoodTrackerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoodTrackerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E2096DC559E5F72E33BCF70D51F4E30 /* QueryDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryDecoder.swift; path = Sources/KituraKit/KituraContracts/QueryDecoder.swift; sourceTree = "<group>"; };
+		241354AC141085CCD528D1304659644A /* Pods-FoodTracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FoodTracker.modulemap"; sourceTree = "<group>"; };
+		2486F6935033EFFCAC61D9C8285C7E73 /* CodableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableExtensions.swift; path = Sources/KituraKit/SwiftyRequest/CodableExtensions.swift; sourceTree = "<group>"; };
+		29395FF02322061FFF5C035ACDD0E24F /* Pods-FoodTracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoodTracker-umbrella.h"; sourceTree = "<group>"; };
+		29EC6CD3F9B1E8FC28C017DFE9F45900 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Sources/KituraKit/SwiftyRequest/HTTPMethod.swift; sourceTree = "<group>"; };
+		390DB8E27A6BEA4887D7710560DEC4C2 /* MonitorCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonitorCollection.swift; path = Sources/KituraKit/CircuitBreaker/MonitorCollection.swift; sourceTree = "<group>"; };
+		3AD840B2A569699690AAA2FDFF5E5972 /* Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snapshot.swift; path = Sources/KituraKit/CircuitBreaker/Snapshot.swift; sourceTree = "<group>"; };
+		3EB09B62500074F286A0A53D66EE05E5 /* KituraKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KituraKit-umbrella.h"; sourceTree = "<group>"; };
+		4183CF0C8FD89017C9F80E375FC35DFE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47781FDC6F7B50088432340BDFBA5318 /* Pods-FoodTrackerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoodTrackerTests-dummy.m"; sourceTree = "<group>"; };
+		47B5125B0A87966708603E19C6810131 /* JSONWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONWrapper.swift; path = Sources/KituraKit/SwiftyRequest/JSONWrapper.swift; sourceTree = "<group>"; };
+		4CC826AD858E909A0BC1B53131632044 /* Pods-FoodTrackerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodTrackerTests-resources.sh"; sourceTree = "<group>"; };
+		593859EBADDFC3DB122AAB82A2FD28E7 /* Pods-FoodTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		6161F1B539D76DE71CE163A1DEC659B7 /* KituraKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KituraKit.xcconfig; sourceTree = "<group>"; };
+		61AC21F7A87E64403EDCFA07448D0FCD /* Pods-FoodTrackerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodTrackerTests-frameworks.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		66640569BCE9D068B01EEFAC90F409AC /* Pods-FoodTracker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodTracker-resources.sh"; sourceTree = "<group>"; };
+		6B139F719074ADE371C2D3BD117ACD0C /* Pods-FoodTrackerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoodTrackerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F532C0B96AB6FDB07E359CB69067E28 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Sources/KituraKit/SwiftyRequest/MultipartFormData.swift; sourceTree = "<group>"; };
+		6FA2EFA29A7AF9AE1397D1BB0E60FC1B /* KituraKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KituraKit-prefix.pch"; sourceTree = "<group>"; };
+		77E7669AE4BB61F3F6759C8E9458C48B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E1492FA926313FC811ADD6B4B8EB8CF /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/KituraKit/CircuitBreaker/Utils.swift; sourceTree = "<group>"; };
+		8989639589EFFD4B351F2CB4B3851A33 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Sources/KituraKit/LoggerAPI/Logger.swift; sourceTree = "<group>"; };
+		8C8F28390A1CC362F4623BC02AF06212 /* Stats.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stats.swift; path = Sources/KituraKit/CircuitBreaker/Stats.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94B9B5448FAC5DF76EBF52B32EAF721C /* KituraKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KituraKit.modulemap; sourceTree = "<group>"; };
+		9A5A73FA30AF2F6503503E3A59FC1BBE /* KituraKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KituraKit-dummy.m"; sourceTree = "<group>"; };
+		9ADE1E805BEF0CF42D27EB4E71851238 /* Pods-FoodTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodTracker.release.xcconfig"; sourceTree = "<group>"; };
+		9D7011C5F1ACDCE16704CBACB186B28A /* Pods-FoodTracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoodTracker-acknowledgements.plist"; sourceTree = "<group>"; };
+		A6225B8E76CA8421577794F9ADA9C153 /* Pods-FoodTracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoodTracker-dummy.m"; sourceTree = "<group>"; };
+		BB931C8D525909ED7DAA8DF87223515E /* RestUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestUtilities.swift; path = Sources/KituraKit/SwiftyRequest/RestUtilities.swift; sourceTree = "<group>"; };
+		C537AE474520341DDC49C66FBD0EF794 /* Client.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Sources/KituraKit/Client.swift; sourceTree = "<group>"; };
+		C55751B8CB2872E1F921270C60317D68 /* Pods_FoodTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoodTrackerTests.framework; path = "Pods-FoodTrackerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB851E05CAF57DCE0DF969E530709860 /* RestToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestToken.swift; path = Sources/KituraKit/SwiftyRequest/RestToken.swift; sourceTree = "<group>"; };
+		CEEB09F336E59FED0165C2DB1ECD00FB /* Pods-FoodTrackerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoodTrackerTests-umbrella.h"; sourceTree = "<group>"; };
+		D5A2EB231902A831CA52EC0682BBAF78 /* Monitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Monitor.swift; path = Sources/KituraKit/CircuitBreaker/Monitor.swift; sourceTree = "<group>"; };
+		D5F5E4F3E9F66A43B2EF67CA7F1D7000 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/KituraKit/KituraContracts/Extensions.swift; sourceTree = "<group>"; };
+		E1C8CAB93E661E49528D6A26BA9AA2A9 /* ClousureAliases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClousureAliases.swift; path = Sources/KituraKit/KituraContracts/ClousureAliases.swift; sourceTree = "<group>"; };
+		E3011FB03AA2F3A9898E297B917A3716 /* BreakerError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BreakerError.swift; path = Sources/KituraKit/CircuitBreaker/BreakerError.swift; sourceTree = "<group>"; };
+		E41DC99776C80162F191228F156B0B04 /* Pods-FoodTrackerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FoodTrackerTests.modulemap"; sourceTree = "<group>"; };
+		E52EDBB35DBD12B64AA901D2C7783F1C /* RequestErrorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestErrorExtension.swift; path = Sources/KituraKit/RequestErrorExtension.swift; sourceTree = "<group>"; };
+		E68BD422EA7963136FE2BE30FCD1E7E6 /* Pods-FoodTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EADF983B7F3DDE971162A87DCD509EA8 /* Pods-FoodTracker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodTracker-frameworks.sh"; sourceTree = "<group>"; };
+		EE3448026E575DB13EC794EF86B8897C /* Pods-FoodTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		F17F26FD1E642438783742A15C06BA11 /* CircuitBreaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircuitBreaker.swift; path = Sources/KituraKit/CircuitBreaker/CircuitBreaker.swift; sourceTree = "<group>"; };
+		F4488C2F41360D87AF18D61C296EE090 /* Bulkhead.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bulkhead.swift; path = Sources/KituraKit/CircuitBreaker/Bulkhead.swift; sourceTree = "<group>"; };
+		FA48BAEF55DC11F664B9DCB292415E29 /* PersistableExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistableExtension.swift; path = Sources/KituraKit/PersistableExtension.swift; sourceTree = "<group>"; };
+		FB78F4D1455C2688B27A2F8EC8B19583 /* Coder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coder.swift; path = Sources/KituraKit/KituraContracts/Coder.swift; sourceTree = "<group>"; };
+		FBD00A0F625553CF9E6B18E13523C1AC /* KituraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KituraKit.framework; path = KituraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB4E07A06C30106293D85848A641157 /* QueryEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryEncoder.swift; path = Sources/KituraKit/KituraContracts/QueryEncoder.swift; sourceTree = "<group>"; };
+		FE1706A02858243A661D49EBE75058EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CA4295066135B85E80F3BDE750BD714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822A5DFFBD1BD2BEBDA295A47D04EF6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0607B2C2838D44A37B376DB9AE4FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032E79911FD45EBF6E784A31B458970F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7898674CCCAC956FD3A417F698B0EED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204B66A1C6A0388FAA9FD65970EAE977 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0270CB233E719AD7753DE1FCDD912A8A /* LoggerAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LoggerAPI;
+			sourceTree = "<group>";
+		};
+		1CBD993E15FC39BF978EA60C3D05FDF0 /* CircuitBreaker */ = {
+			isa = PBXGroup;
+			children = (
+				E3011FB03AA2F3A9898E297B917A3716 /* BreakerError.swift */,
+				F4488C2F41360D87AF18D61C296EE090 /* Bulkhead.swift */,
+				F17F26FD1E642438783742A15C06BA11 /* CircuitBreaker.swift */,
+				1432DFC1147122547CA1E5F4A2B8F3FF /* Collection.swift */,
+				186409A6264796C7467704A6F3EAACD2 /* Invocation.swift */,
+				D5A2EB231902A831CA52EC0682BBAF78 /* Monitor.swift */,
+				390DB8E27A6BEA4887D7710560DEC4C2 /* MonitorCollection.swift */,
+				3AD840B2A569699690AAA2FDFF5E5972 /* Snapshot.swift */,
+				8C8F28390A1CC362F4623BC02AF06212 /* Stats.swift */,
+				7E1492FA926313FC811ADD6B4B8EB8CF /* Utils.swift */,
+				B67A336449DAAB3721FAAF97DA58BBF7 /* LoggerAPI */,
+			);
+			name = CircuitBreaker;
+			sourceTree = "<group>";
+		};
+		2F07AE736431EA70B51546AEBD98CA4E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B7BB820D6D5361DCCAC8C1299B3C5C3 /* Pods-FoodTracker */,
+				B65CDC5B2E81CBF2A04BF2D63740254B /* Pods-FoodTrackerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4B7BB820D6D5361DCCAC8C1299B3C5C3 /* Pods-FoodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				FE1706A02858243A661D49EBE75058EE /* Info.plist */,
+				241354AC141085CCD528D1304659644A /* Pods-FoodTracker.modulemap */,
+				01959C2F3F0266A1CD5B61AFD7146E76 /* Pods-FoodTracker-acknowledgements.markdown */,
+				9D7011C5F1ACDCE16704CBACB186B28A /* Pods-FoodTracker-acknowledgements.plist */,
+				A6225B8E76CA8421577794F9ADA9C153 /* Pods-FoodTracker-dummy.m */,
+				EADF983B7F3DDE971162A87DCD509EA8 /* Pods-FoodTracker-frameworks.sh */,
+				66640569BCE9D068B01EEFAC90F409AC /* Pods-FoodTracker-resources.sh */,
+				29395FF02322061FFF5C035ACDD0E24F /* Pods-FoodTracker-umbrella.h */,
+				593859EBADDFC3DB122AAB82A2FD28E7 /* Pods-FoodTracker.debug.xcconfig */,
+				9ADE1E805BEF0CF42D27EB4E71851238 /* Pods-FoodTracker.release.xcconfig */,
+			);
+			name = "Pods-FoodTracker";
+			path = "Target Support Files/Pods-FoodTracker";
+			sourceTree = "<group>";
+		};
+		6970487A75B0C12710B5F28C655D1CCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBD00A0F625553CF9E6B18E13523C1AC /* KituraKit.framework */,
+				0C22C3C8E8A3236E19648A4AFB699722 /* Pods_FoodTracker.framework */,
+				C55751B8CB2872E1F921270C60317D68 /* Pods_FoodTrackerTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79E4BEDD46A82869FE14E2EAFF8D07BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA4712CD4F9A67969C8730B73021B03C /* KituraKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				79E4BEDD46A82869FE14E2EAFF8D07BF /* Pods */,
+				6970487A75B0C12710B5F28C655D1CCD /* Products */,
+				2F07AE736431EA70B51546AEBD98CA4E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		809ADE03A8B9252C833B08208AF250E8 /* SwiftyRequest */ = {
+			isa = PBXGroup;
+			children = (
+				2486F6935033EFFCAC61D9C8285C7E73 /* CodableExtensions.swift */,
+				29EC6CD3F9B1E8FC28C017DFE9F45900 /* HTTPMethod.swift */,
+				12975D2E009EB3EB30C7B0F5EB44167A /* JSON.swift */,
+				47B5125B0A87966708603E19C6810131 /* JSONWrapper.swift */,
+				6F532C0B96AB6FDB07E359CB69067E28 /* MultipartFormData.swift */,
+				102C2F7513983FE9B52CE6052F0EA6F0 /* RestRequest.swift */,
+				CB851E05CAF57DCE0DF969E530709860 /* RestToken.swift */,
+				BB931C8D525909ED7DAA8DF87223515E /* RestUtilities.swift */,
+				0D0EDEAEAFCDBD00CB3207117D5FC169 /* StringExtensions.swift */,
+				DDD6C990DA32C258551BE929D84623BA /* CircuitBreaker */,
+			);
+			name = SwiftyRequest;
+			sourceTree = "<group>";
+		};
+		8298B0111ABBCD82E52958EF23A637CE /* KituraContracts */ = {
+			isa = PBXGroup;
+			children = (
+				E1C8CAB93E661E49528D6A26BA9AA2A9 /* ClousureAliases.swift */,
+				FB78F4D1455C2688B27A2F8EC8B19583 /* Coder.swift */,
+				18963149D0E4C177109A3FF1CB1331D9 /* Contracts.swift */,
+				D5F5E4F3E9F66A43B2EF67CA7F1D7000 /* Extensions.swift */,
+				1E2096DC559E5F72E33BCF70D51F4E30 /* QueryDecoder.swift */,
+				FDB4E07A06C30106293D85848A641157 /* QueryEncoder.swift */,
+				0270CB233E719AD7753DE1FCDD912A8A /* LoggerAPI */,
+			);
+			name = KituraContracts;
+			sourceTree = "<group>";
+		};
+		B65CDC5B2E81CBF2A04BF2D63740254B /* Pods-FoodTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4183CF0C8FD89017C9F80E375FC35DFE /* Info.plist */,
+				E41DC99776C80162F191228F156B0B04 /* Pods-FoodTrackerTests.modulemap */,
+				6B139F719074ADE371C2D3BD117ACD0C /* Pods-FoodTrackerTests-acknowledgements.markdown */,
+				19C96E2478C9DF49E591E5017A199C1A /* Pods-FoodTrackerTests-acknowledgements.plist */,
+				47781FDC6F7B50088432340BDFBA5318 /* Pods-FoodTrackerTests-dummy.m */,
+				61AC21F7A87E64403EDCFA07448D0FCD /* Pods-FoodTrackerTests-frameworks.sh */,
+				4CC826AD858E909A0BC1B53131632044 /* Pods-FoodTrackerTests-resources.sh */,
+				CEEB09F336E59FED0165C2DB1ECD00FB /* Pods-FoodTrackerTests-umbrella.h */,
+				E68BD422EA7963136FE2BE30FCD1E7E6 /* Pods-FoodTrackerTests.debug.xcconfig */,
+				EE3448026E575DB13EC794EF86B8897C /* Pods-FoodTrackerTests.release.xcconfig */,
+			);
+			name = "Pods-FoodTrackerTests";
+			path = "Target Support Files/Pods-FoodTrackerTests";
+			sourceTree = "<group>";
+		};
+		B67A336449DAAB3721FAAF97DA58BBF7 /* LoggerAPI */ = {
+			isa = PBXGroup;
+			children = (
+				8989639589EFFD4B351F2CB4B3851A33 /* Logger.swift */,
+			);
+			name = LoggerAPI;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2CCEBC5364AF4089B1CBFE574797D51 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77E7669AE4BB61F3F6759C8E9458C48B /* Info.plist */,
+				94B9B5448FAC5DF76EBF52B32EAF721C /* KituraKit.modulemap */,
+				6161F1B539D76DE71CE163A1DEC659B7 /* KituraKit.xcconfig */,
+				9A5A73FA30AF2F6503503E3A59FC1BBE /* KituraKit-dummy.m */,
+				6FA2EFA29A7AF9AE1397D1BB0E60FC1B /* KituraKit-prefix.pch */,
+				3EB09B62500074F286A0A53D66EE05E5 /* KituraKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KituraKit";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DDD6C990DA32C258551BE929D84623BA /* CircuitBreaker */ = {
+			isa = PBXGroup;
+			children = (
+				EA6B5CD158F37416CC3B6508FC062E7B /* LoggerAPI */,
+			);
+			name = CircuitBreaker;
+			sourceTree = "<group>";
+		};
+		EA6B5CD158F37416CC3B6508FC062E7B /* LoggerAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LoggerAPI;
+			sourceTree = "<group>";
+		};
+		FA4712CD4F9A67969C8730B73021B03C /* KituraKit */ = {
+			isa = PBXGroup;
+			children = (
+				C537AE474520341DDC49C66FBD0EF794 /* Client.swift */,
+				FA48BAEF55DC11F664B9DCB292415E29 /* PersistableExtension.swift */,
+				E52EDBB35DBD12B64AA901D2C7783F1C /* RequestErrorExtension.swift */,
+				1CBD993E15FC39BF978EA60C3D05FDF0 /* CircuitBreaker */,
+				8298B0111ABBCD82E52958EF23A637CE /* KituraContracts */,
+				D2CCEBC5364AF4089B1CBFE574797D51 /* Support Files */,
+				809ADE03A8B9252C833B08208AF250E8 /* SwiftyRequest */,
+			);
+			name = KituraKit;
+			path = KituraKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11FCBE410CF8677FA276DD51F3255F2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B100AD472BCF90BAC2BD05BE40041B15 /* Pods-FoodTracker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CA6E2FC18B266DD043221904B3E9513 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E99E837DD1A41AA9260051E08270EE /* Pods-FoodTrackerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE4457C0A9E79C4D5D4F89A62C184FEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705773F638C52F1089227E08279665B3 /* KituraKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D1EBB3C617D6279C93C2F513B279D9A /* Pods-FoodTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 951688A6D79849FD32496DC28B039198 /* Build configuration list for PBXNativeTarget "Pods-FoodTracker" */;
+			buildPhases = (
+				F5765B88FC726D4E9DE251156846708F /* Sources */,
+				6E0607B2C2838D44A37B376DB9AE4FDE /* Frameworks */,
+				11FCBE410CF8677FA276DD51F3255F2B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				176DA60F70C713CAD1955F5A7D2B021C /* PBXTargetDependency */,
+			);
+			name = "Pods-FoodTracker";
+			productName = "Pods-FoodTracker";
+			productReference = 0C22C3C8E8A3236E19648A4AFB699722 /* Pods_FoodTracker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5422A23D0CDFFC0AA49ABC989A82CBEF /* KituraKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B83004AE75FE6FFD61B14B154EBFAA48 /* Build configuration list for PBXNativeTarget "KituraKit" */;
+			buildPhases = (
+				3429C58AD5AC7A5CB5EB2C9CDBF39616 /* Sources */,
+				2CA4295066135B85E80F3BDE750BD714 /* Frameworks */,
+				EE4457C0A9E79C4D5D4F89A62C184FEB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KituraKit;
+			productName = KituraKit;
+			productReference = FBD00A0F625553CF9E6B18E13523C1AC /* KituraKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8FB10EC9890057E39BD3AE8A790C53B /* Pods-FoodTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D651582F36E882606D2A3156ABBA16 /* Build configuration list for PBXNativeTarget "Pods-FoodTrackerTests" */;
+			buildPhases = (
+				7EDCC18A2F3762350DE61D384D98940E /* Sources */,
+				7898674CCCAC956FD3A417F698B0EED2 /* Frameworks */,
+				8CA6E2FC18B266DD043221904B3E9513 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FoodTrackerTests";
+			productName = "Pods-FoodTrackerTests";
+			productReference = C55751B8CB2872E1F921270C60317D68 /* Pods_FoodTrackerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6970487A75B0C12710B5F28C655D1CCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5422A23D0CDFFC0AA49ABC989A82CBEF /* KituraKit */,
+				2D1EBB3C617D6279C93C2F513B279D9A /* Pods-FoodTracker */,
+				C8FB10EC9890057E39BD3AE8A790C53B /* Pods-FoodTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3429C58AD5AC7A5CB5EB2C9CDBF39616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC5695B34F5BA66665FB49F08CD5CD3 /* BreakerError.swift in Sources */,
+				4980EF716E962D03310DF61296CE26D4 /* Bulkhead.swift in Sources */,
+				049375EF79F041F39A3DD7407006FFA8 /* CircuitBreaker.swift in Sources */,
+				951B05142FD74D68D3D2054F60B5DBD1 /* Client.swift in Sources */,
+				5369C4ADE2661AF4BDF43FCFA762A1FC /* ClousureAliases.swift in Sources */,
+				42881CD3BD8D722B485FF765AC5EEF77 /* CodableExtensions.swift in Sources */,
+				8D30437256CBDC8988EF33366CB2CE75 /* Coder.swift in Sources */,
+				A53A4BD7C809C31E848C8050898A1755 /* Collection.swift in Sources */,
+				1FBBB093FF8E1E93F94CECCCFF23C491 /* Contracts.swift in Sources */,
+				78B68806BF2DB17B3CE6ECB7AEB0F6B4 /* Extensions.swift in Sources */,
+				F0D5607A1F8816F2DC9F1C7BEC8F56BF /* HTTPMethod.swift in Sources */,
+				0DB09E448A20AA8E74E37DAE8F1F32A5 /* Invocation.swift in Sources */,
+				1C365D808E4288AEFDCE0A9591053B3E /* JSON.swift in Sources */,
+				034FEEAEE68304446BC46DA712995B69 /* JSONWrapper.swift in Sources */,
+				6199EABBBFD2F69B37D08018A5B543A0 /* KituraKit-dummy.m in Sources */,
+				10386C4EDB5AC4A651949986009921B2 /* Logger.swift in Sources */,
+				3FE595349CC50F66F97F8036CF19E40D /* Monitor.swift in Sources */,
+				FFCC8D23103FC03BB4F2E3D35C662D88 /* MonitorCollection.swift in Sources */,
+				CDB8BB01077D019D46E134A25B762B0F /* MultipartFormData.swift in Sources */,
+				9F7136A2AF75F042B168250DA3D19699 /* PersistableExtension.swift in Sources */,
+				11256289203E6F472C33B6E06E0AC80D /* QueryDecoder.swift in Sources */,
+				50422E405FD2652990D61AE44FB509F3 /* QueryEncoder.swift in Sources */,
+				07BDA9F90AAFC0190A442889233F22F7 /* RequestErrorExtension.swift in Sources */,
+				1482F1943A5222450AB0E2495E75FAAE /* RestRequest.swift in Sources */,
+				385BAD2570FDBA83856EA2B33D9F4741 /* RestToken.swift in Sources */,
+				E8A6C4E5D604B9770954B7C8963D47C9 /* RestUtilities.swift in Sources */,
+				B35C15BA841E0803EEAC64E3070104EC /* Snapshot.swift in Sources */,
+				432F4494E822FFACC07067C596A176FC /* Stats.swift in Sources */,
+				5472DE241F0E97B779FC81FC9F32257F /* StringExtensions.swift in Sources */,
+				1A52EC4DC63914937CC073AB76435E20 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDCC18A2F3762350DE61D384D98940E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47032D3523F79EC0A7445A87DE1E1AC4 /* Pods-FoodTrackerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5765B88FC726D4E9DE251156846708F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A82021DB79CC77977142FD1C81A879 /* Pods-FoodTracker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		176DA60F70C713CAD1955F5A7D2B021C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KituraKit;
+			target = 5422A23D0CDFFC0AA49ABC989A82CBEF /* KituraKit */;
+			targetProxy = 8E6592E24893D37E72138449C09B5E18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		072EB888B4660FA79D4EB44E39BC5D6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6161F1B539D76DE71CE163A1DEC659B7 /* KituraKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KituraKit/KituraKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KituraKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KituraKit/KituraKit.modulemap";
+				PRODUCT_NAME = KituraKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		12C4B864767C59600DBFA238F1E2F8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6E515EBE5FBA05984DF4388E3644C034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 593859EBADDFC3DB122AAB82A2FD28E7 /* Pods-FoodTracker.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoodTracker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoodTracker/Pods-FoodTracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FoodTracker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7BB2C8BCBC83DA1C65BE8A3F021944BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68BD422EA7963136FE2BE30FCD1E7E6 /* Pods-FoodTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoodTrackerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoodTrackerTests/Pods-FoodTrackerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FoodTrackerTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD0C87EF5C8850691DACC39DB71DA10D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE3448026E575DB13EC794EF86B8897C /* Pods-FoodTrackerTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoodTrackerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoodTrackerTests/Pods-FoodTrackerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FoodTrackerTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4056BE32EF633BC889C556CF66BFC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6161F1B539D76DE71CE163A1DEC659B7 /* KituraKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KituraKit/KituraKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KituraKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KituraKit/KituraKit.modulemap";
+				PRODUCT_NAME = KituraKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4EFA38DB890404F86A9A587D189E875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ADE1E805BEF0CF42D27EB4E71851238 /* Pods-FoodTracker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoodTracker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoodTracker/Pods-FoodTracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FoodTracker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16D651582F36E882606D2A3156ABBA16 /* Build configuration list for PBXNativeTarget "Pods-FoodTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB2C8BCBC83DA1C65BE8A3F021944BE /* Debug */,
+				AD0C87EF5C8850691DACC39DB71DA10D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
+				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		951688A6D79849FD32496DC28B039198 /* Build configuration list for PBXNativeTarget "Pods-FoodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E515EBE5FBA05984DF4388E3644C034 /* Debug */,
+				E4EFA38DB890404F86A9A587D189E875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B83004AE75FE6FFD61B14B154EBFAA48 /* Build configuration list for PBXNativeTarget "KituraKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4056BE32EF633BC889C556CF66BFC2F /* Debug */,
+				072EB888B4660FA79D4EB44E39BC5D6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
