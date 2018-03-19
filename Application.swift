@@ -4,10 +4,8 @@ import LoggerAPI
 import Configuration
 import CloudEnvironment
 import KituraContracts
-import Health
 
 public let projectPath = ConfigurationManager.BasePath.project.path
-public let health = Health()
 
 public class App {
     let router = Router()
@@ -17,14 +15,9 @@ public class App {
     private var mealStore: [String: Meal] = [:]
 
     public init() throws {
-        // Run the metrics initializer
-        initializeMetrics(router: router)
     }
 
     func postInit() throws {
-        // Endpoints
-        initializeHealthRoutes(app: self)
-     
         // Routes that the application will respond on:
         // POST on /meals calls storeHandler()
         // GET  on /meals calls loadHandler()   
